@@ -28,7 +28,7 @@ before_install:
 script:
   - npm test
   - npm run build-demo
-  - cd examples; make build.all
+  - cd examples; make build.all; cd ..
 
 env:
   global:
@@ -38,7 +38,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: GH_KEY
-  local_dir: demo/*
+  local_dir: demo
   on:
     branch: master
     node: "6"
