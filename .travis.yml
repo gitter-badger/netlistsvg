@@ -40,3 +40,4 @@ deploy:
   github_token: GH_KEY
   on:
     branch: master
+    node: "6"
