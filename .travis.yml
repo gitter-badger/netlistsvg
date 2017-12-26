@@ -38,6 +38,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: GH_KEY
+  local_dir: demo
   on:
     branch: master
     node: "6"
